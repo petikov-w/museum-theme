@@ -8,24 +8,20 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open();?>
-<header class="header">
+<header>
     <div class="container">
-        <div class="header-wrapper">
-
-            <?php
-//            get_template_part( 'template-parts/content', 'header-logo' );
-
-            // Вывод основного меню сайта
-//            wp_nav_menu( [
-//                'theme_location'  => 'header_menu',
-//                'container'       => 'nav',
-//                'container_class' => 'header-nav',
-//                'menu_class'      => 'header-menu',
-//                'echo'            => true,
-//            ] );
-
-            // Вывод поля для поискового запроса
-            ?>
+        <div class="header-top">
+            <div class="row">
+                <div class="col-xs-10 col-sm-12	col-md-12 col-lg-4">
+                    <div class="logo-text">
+                       <?php get_template_part( 'template-parts/content', 'header-logo' ); ?>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
 </header>
+
+
+
