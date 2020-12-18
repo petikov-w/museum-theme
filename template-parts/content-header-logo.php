@@ -7,13 +7,16 @@ $home_url = get_home_url();
 if(has_custom_logo()){
     if(is_front_page() || is_home()) {
         // Если это главная страница, то логотип сайта выводится, как обычное изображение
-        echo '<div class="logo"><img src="' . $custom_logo__url[0] . '" alt="logo">
-                      <span class="logo-name-1s">' . get_bloginfo('name') . '</span></br><span class="logo-name-1s">' .
-                        get_bloginfo('description') . '</span></div>';
+        echo '<div class="logo-text"><img src="' . $custom_logo__url[0] . '" alt="logo">
+                     <div class="logo-text-wrapp"><span>' . get_bloginfo('name') .
+                    '</span><h3>' . get_bloginfo('description') . '</h3></div></div>';
     }
     else {
         // В других случаях изображение логотипа сайта выводится, как ссылка на главную страницу
-        echo '<a href="' . $home_url . '" class="logo"><img src="' . $custom_logo__url[0] . '" alt="logo">
-	            <span class="logo-name-light">' . get_bloginfo('name') . '</span></a>';
+
+	    echo '<a href="'. $home_url . '"><div class="logo-text"><img src="' . $custom_logo__url[0] . '" alt="logo">
+                     <div class="logo-text-wrapp"><span>' . get_bloginfo('name') .
+	         '</span><h3>' . get_bloginfo('description') . '</h3></div></div></a>';
     }
 }
+

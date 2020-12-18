@@ -76,6 +76,10 @@ nav ul.nav-main li > ul li a{
 	line-height: 100%;
 	color: #666666;
 }
+/*.container {*/
+/*	max-width: 1200px;*/
+/*	margin: auto;*/
+/*}*/
 
 .btn{
 	font-size: 20px;
@@ -181,12 +185,14 @@ header .row .header-col nav{
 }
 .logo-text{
 	display: flex;
+	margin-bottom: 5px;
 }
 .logo-text .logo-text-wrapp{
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	margin-left: 9px;
+	margin-top: 5px;
 }
 .logo-text img{
 	max-width: 50px;
