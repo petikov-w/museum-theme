@@ -2,28 +2,18 @@
 get_header();
 ?>
 <div class="container">
-    <section class="hero">
+    <section  class="hero">
         <div class="slider-wrapp">
-            <div class="swiper-container section-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" data-num="1">
-                        <img src="img/header/slide-1.jpg">
-                        <h1>2004 г. Александр Николаев - <br>Весна. Новгородский Кремль</h1>
-
-                        <a href="#" class="slider-btn">Купить билет</a>
-                    </div>
-                    <div class="swiper-slide" data-num="2">
-                        <img src="img/header/slide-1.jpg">
-                        <h1>2004 г. Александр Николаев - Весна. Новгородский Кремль</h1>
-
-                        <a href="#" class="slider-btn">Купить билет</a>
-                    </div>
-                    <div class="swiper-slide" data-num="3">
-                        <img src="img/header/slide-1.jpg">
-                        <h1>2004 г. Александр Николаев - Весна. Новгородский Кремль</h1>
-
-                        <a href="#" class="slider-btn">Купить билет</a>
-                    </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper section-slider">
+<!--======================================================================================        -->
+                <?php
+                    $args_events = array(
+                        'post_type' => 'event',
+                    );
+                    cycle_wp_query($args_events, 'slide-main-page');
+                ?>
+<!-- ================================================================================-->
                 </div>
                 <div class="swiper-button_arrows">
                     <div class="swiper-button-prev"></div>
@@ -45,11 +35,3 @@ get_header();
 get_footer();
 ?>
 
-<!---->
-<?php
-//$args_photo_report = array(
-//	'posts_per_page' => 1,
-//	'category_name' => 'photo-report',
-//);
-//cycle_wp_query($args_photo_report, 'photo-report');
-//?>

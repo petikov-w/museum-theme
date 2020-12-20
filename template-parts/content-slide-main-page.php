@@ -1,18 +1,11 @@
 
 
 <!--  ==================== Подключение слайдера ======================= -->
-    <div class="swiper-container photo-report-slider">
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-	        <?php $images = get_attached_media('image');
-	        $images_count=count($images);
-	        foreach ( $images as $image) {
-	            echo '<div class="swiper-slide"><img src="';
-		        print_r($image->guid);
-	            echo '"></div>';
-	        }
-	        ?>
-        </div>
-        <div class="swiper-pagination"></div>
-    </div>
+
+            <div class="swiper-slide">
+                <h2><?php the_title() ?></h2>
+                <img src="<?php the_post_thumbnail(); ?>">
+            </div>
+
+
 <!--  ==================== Подключение слайдера (конец) =============== -->

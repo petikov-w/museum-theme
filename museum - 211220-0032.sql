@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Дек 20 2020 г., 21:31
--- Версия сервера: 10.3.22-MariaDB
--- Версия PHP: 7.4.5
+-- Время создания: Дек 21 2020 г., 00:31
+-- Версия сервера: 10.3.13-MariaDB-log
+-- Версия PHP: 7.3.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -212,7 +213,7 @@ INSERT INTO `museum_options` (`option_id`, `option_name`, `option_value`, `autol
 (105, 'widget_archives', 'a:2:{i:2;a:3:{s:5:\"title\";s:0:\"\";s:5:\"count\";i:0;s:8:\"dropdown\";i:0;}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (106, 'widget_meta', 'a:2:{i:2;a:1:{s:5:\"title\";s:0:\"\";}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (107, 'sidebars_widgets', 'a:7:{s:16:\"footer-listphone\";a:1:{i:0;s:18:\"listphone_widget-2\";}s:19:\"wp_inactive_widgets\";a:8:{i:0;s:6:\"text-2\";i:1;s:6:\"text-3\";i:2;s:8:\"search-2\";i:3;s:14:\"recent-posts-2\";i:4;s:17:\"recent-comments-2\";i:5;s:10:\"archives-2\";i:6;s:12:\"categories-2\";i:7;s:6:\"meta-2\";}s:19:\"footer-workschedule\";a:1:{i:0;s:21:\"workschedule_widget-2\";}s:19:\"footer-contact-info\";a:3:{i:0;s:18:\"listphone_widget-3\";i:1;s:6:\"text-7\";i:2;s:22:\"socialnetwork_widget-2\";}s:16:\"footer-text-left\";a:1:{i:0;s:6:\"text-5\";}s:17:\"footer-text-right\";a:1:{i:0;s:6:\"text-6\";}s:13:\"array_version\";i:3;}', 'yes'),
-(108, 'cron', 'a:7:{i:1608479566;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1608515300;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1608558499;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1608558522;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1608558526;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1608904099;a:1:{s:30:\"wp_site_health_scheduled_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}}s:7:\"version\";i:2;}', 'yes'),
+(108, 'cron', 'a:7:{i:1608501166;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1608515300;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1608558499;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1608558522;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1608558526;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1608904099;a:1:{s:30:\"wp_site_health_scheduled_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}}s:7:\"version\";i:2;}', 'yes'),
 (109, 'widget_pages', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (110, 'widget_calendar', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (111, 'widget_media_audio', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
@@ -507,7 +508,27 @@ INSERT INTO `museum_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) V
 (277, 62, 'inline_featured_image', '0'),
 (278, 62, '_edit_lock', '1608473614:1'),
 (279, 64, 'inline_featured_image', '0'),
-(280, 64, '_edit_lock', '1608478302:1');
+(280, 64, '_edit_lock', '1608478302:1'),
+(281, 65, 'inline_featured_image', '0'),
+(282, 65, '_edit_lock', '1608494265:1'),
+(283, 66, '_wp_attached_file', '2020/12/1.png'),
+(284, 66, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:790;s:6:\"height\";i:460;s:4:\"file\";s:13:\"2020/12/1.png\";s:5:\"sizes\";a:3:{s:6:\"medium\";a:4:{s:4:\"file\";s:13:\"1-300x175.png\";s:5:\"width\";i:300;s:6:\"height\";i:175;s:9:\"mime-type\";s:9:\"image/png\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:13:\"1-150x150.png\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:9:\"image/png\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:13:\"1-768x447.png\";s:5:\"width\";i:768;s:6:\"height\";i:447;s:9:\"mime-type\";s:9:\"image/png\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(285, 65, '_thumbnail_id', '66'),
+(286, 67, 'inline_featured_image', '0'),
+(287, 67, '_edit_lock', '1608494354:1'),
+(288, 68, '_wp_attached_file', '2020/12/3.png'),
+(289, 68, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:380;s:6:\"height\";i:230;s:4:\"file\";s:13:\"2020/12/3.png\";s:5:\"sizes\";a:2:{s:6:\"medium\";a:4:{s:4:\"file\";s:13:\"3-300x182.png\";s:5:\"width\";i:300;s:6:\"height\";i:182;s:9:\"mime-type\";s:9:\"image/png\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:13:\"3-150x150.png\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:9:\"image/png\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(290, 67, '_thumbnail_id', '68'),
+(291, 69, 'inline_featured_image', '0'),
+(292, 69, '_edit_lock', '1608494472:1'),
+(293, 70, '_wp_attached_file', '2020/12/2.png'),
+(294, 70, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:380;s:6:\"height\";i:230;s:4:\"file\";s:13:\"2020/12/2.png\";s:5:\"sizes\";a:2:{s:6:\"medium\";a:4:{s:4:\"file\";s:13:\"2-300x182.png\";s:5:\"width\";i:300;s:6:\"height\";i:182;s:9:\"mime-type\";s:9:\"image/png\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:13:\"2-150x150.png\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:9:\"image/png\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(295, 69, '_thumbnail_id', '70'),
+(296, 71, 'inline_featured_image', '0'),
+(297, 71, '_edit_lock', '1608494602:1'),
+(298, 72, '_wp_attached_file', '2020/12/slide-1.jpg'),
+(299, 72, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:1200;s:6:\"height\";i:600;s:4:\"file\";s:19:\"2020/12/slide-1.jpg\";s:5:\"sizes\";a:4:{s:6:\"medium\";a:4:{s:4:\"file\";s:19:\"slide-1-300x150.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:20:\"slide-1-1024x512.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:512;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:19:\"slide-1-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:19:\"slide-1-768x384.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:384;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(300, 71, '_thumbnail_id', '72');
 
 -- --------------------------------------------------------
 
@@ -601,7 +622,15 @@ INSERT INTO `museum_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `
 (61, 1, '2020-12-20 17:15:31', '0000-00-00 00:00:00', '', 'Черновик', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2020-12-20 17:15:31', '0000-00-00 00:00:00', '', 0, 'http://museum.loc/?post_type=education&p=61', 0, 'education', '', 0),
 (62, 1, '2020-12-20 17:15:55', '0000-00-00 00:00:00', '', 'Черновик', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2020-12-20 17:15:55', '0000-00-00 00:00:00', '', 0, 'http://museum.loc/?post_type=event&p=62', 0, 'event', '', 0),
 (63, 1, '2020-12-20 17:33:13', '0000-00-00 00:00:00', '', 'Черновик', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2020-12-20 17:33:13', '0000-00-00 00:00:00', '', 0, 'http://museum.loc/?post_type=acf-field-group&p=63', 0, 'acf-field-group', '', 0),
-(64, 1, '2020-12-20 18:16:30', '0000-00-00 00:00:00', '', 'Черновик', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2020-12-20 18:16:30', '0000-00-00 00:00:00', '', 0, 'http://museum.loc/?post_type=event&p=64', 0, 'event', '', 0);
+(64, 1, '2020-12-20 18:16:30', '0000-00-00 00:00:00', '', 'Черновик', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2020-12-20 18:16:30', '0000-00-00 00:00:00', '', 0, 'http://museum.loc/?post_type=event&p=64', 0, 'event', '', 0),
+(65, 1, '2020-12-20 22:59:57', '2020-12-20 19:59:57', '<!-- wp:paragraph -->\n<p>Продолжаем тему скульптурного рельефа.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Сегодня мы публикуем видеозапись беседы с А.А. Николаевым об особенностях орнаментального рельефа.</p>\n<!-- /wp:paragraph -->', 'Итоговая конференция. Выступление руководителя группы из ДШИ г. Тихвин', '', 'publish', 'closed', 'closed', '', '%d0%b8%d1%82%d0%be%d0%b3%d0%be%d0%b2%d0%b0%d1%8f-%d0%ba%d0%be%d0%bd%d1%84%d0%b5%d1%80%d0%b5%d0%bd%d1%86%d0%b8%d1%8f-%d0%b2%d1%8b%d1%81%d1%82%d1%83%d0%bf%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d1%80%d1%83', '', '', '2020-12-20 22:59:57', '2020-12-20 19:59:57', '', 0, 'http://museum.loc/?post_type=event&#038;p=65', 0, 'event', '', 0),
+(66, 1, '2020-12-20 22:57:34', '2020-12-20 19:57:34', '', '1', '', 'inherit', 'open', 'closed', '', '1', '', '', '2020-12-20 22:57:34', '2020-12-20 19:57:34', '', 65, 'http://museum.loc/wp-content/uploads/2020/12/1.png', 0, 'attachment', 'image/png', 0),
+(67, 1, '2020-12-20 23:01:25', '2020-12-20 20:01:25', '', 'Выступление руководителя группы из ДШИ г. Урюпинск', '', 'publish', 'closed', 'closed', '', '%d0%b2%d1%8b%d1%81%d1%82%d1%83%d0%bf%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d1%80%d1%83%d0%ba%d0%be%d0%b2%d0%be%d0%b4%d0%b8%d1%82%d0%b5%d0%bb%d1%8f-%d0%b3%d1%80%d1%83%d0%bf%d0%bf%d1%8b-%d0%b8%d0%b7-%d0%b4', '', '', '2020-12-20 23:01:25', '2020-12-20 20:01:25', '', 0, 'http://museum.loc/?post_type=event&#038;p=67', 0, 'event', '', 0),
+(68, 1, '2020-12-20 23:00:55', '2020-12-20 20:00:55', '', '3', '', 'inherit', 'open', 'closed', '', '3', '', '', '2020-12-20 23:00:55', '2020-12-20 20:00:55', '', 67, 'http://museum.loc/wp-content/uploads/2020/12/3.png', 0, 'attachment', 'image/png', 0),
+(69, 1, '2020-12-20 23:03:35', '2020-12-20 20:03:35', '', 'Победа \"Мастерской-музея реалистической живописи Александра Николаева\"', '', 'publish', 'closed', 'closed', '', '%d0%bf%d0%be%d0%b1%d0%b5%d0%b4%d0%b0-%d0%bc%d0%b0%d1%81%d1%82%d0%b5%d1%80%d1%81%d0%ba%d0%be%d0%b9-%d0%bc%d1%83%d0%b7%d0%b5%d1%8f-%d1%80%d0%b5%d0%b0%d0%bb%d0%b8%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81', '', '', '2020-12-20 23:03:35', '2020-12-20 20:03:35', '', 0, 'http://museum.loc/?post_type=event&#038;p=69', 0, 'event', '', 0),
+(70, 1, '2020-12-20 23:03:14', '2020-12-20 20:03:14', '', '2', '', 'inherit', 'open', 'closed', '', '2', '', '', '2020-12-20 23:03:14', '2020-12-20 20:03:14', '', 69, 'http://museum.loc/wp-content/uploads/2020/12/2.png', 0, 'attachment', 'image/png', 0),
+(71, 1, '2020-12-20 23:05:40', '2020-12-20 20:05:40', '', 'Весна. Новгородский Кремль. Александр Николаев', '', 'publish', 'closed', 'closed', '', '%d0%b2%d0%b5%d1%81%d0%bd%d0%b0-%d0%bd%d0%be%d0%b2%d0%b3%d0%be%d1%80%d0%be%d0%b4%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d1%80%d0%b5%d0%bc%d0%bb%d1%8c-%d0%b0%d0%bb%d0%b5%d0%ba%d1%81%d0%b0%d0%bd%d0%b4%d1%80', '', '', '2020-12-20 23:05:40', '2020-12-20 20:05:40', '', 0, 'http://museum.loc/?post_type=event&#038;p=71', 0, 'event', '', 0),
+(72, 1, '2020-12-20 23:05:27', '2020-12-20 20:05:27', '', 'slide-1', '', 'inherit', 'open', 'closed', '', 'slide-1', '', '', '2020-12-20 23:05:27', '2020-12-20 20:05:27', '', 71, 'http://museum.loc/wp-content/uploads/2020/12/slide-1.jpg', 0, 'attachment', 'image/jpeg', 0);
 
 -- --------------------------------------------------------
 
@@ -734,7 +763,7 @@ INSERT INTO `museum_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) 
 (13, 1, 'museum_user_level', '10'),
 (14, 1, 'dismissed_wp_pointers', 'text_widget_custom_html'),
 (15, 1, 'show_welcome_panel', '1'),
-(16, 1, 'session_tokens', 'a:4:{s:64:\"90081a994fd32d8e7070e4ef921546476d8d87ecfe177a6a299c6460bf61fcad\";a:4:{s:10:\"expiration\";i:1608551805;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:148:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 YaBrowser/20.11.3.183 Yowser/2.5 Safari/537.36\";s:5:\"login\";i:1608379005;}s:64:\"0349f4c7e30112004e7016f6d986f07e832fb82ce8d2011ea97fdc506882ccda\";a:4:{s:10:\"expiration\";i:1608624335;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:148:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 YaBrowser/20.11.3.183 Yowser/2.5 Safari/537.36\";s:5:\"login\";i:1608451535;}s:64:\"b8c158de468075c4caa3be417fbfd8755708799caa295cae848607e17db81082\";a:4:{s:10:\"expiration\";i:1608634525;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:143:\"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 YaBrowser/20.11.3.179 Yowser/2.5 Safari/537.36\";s:5:\"login\";i:1608461725;}s:64:\"a640588cdfe359bd1ad25c6c40a5ceedce178cce05c65917d1a27ea716a8eb3e\";a:4:{s:10:\"expiration\";i:1608648799;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:143:\"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 YaBrowser/20.11.3.179 Yowser/2.5 Safari/537.36\";s:5:\"login\";i:1608475999;}}'),
+(16, 1, 'session_tokens', 'a:5:{s:64:\"90081a994fd32d8e7070e4ef921546476d8d87ecfe177a6a299c6460bf61fcad\";a:4:{s:10:\"expiration\";i:1608551805;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:148:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 YaBrowser/20.11.3.183 Yowser/2.5 Safari/537.36\";s:5:\"login\";i:1608379005;}s:64:\"0349f4c7e30112004e7016f6d986f07e832fb82ce8d2011ea97fdc506882ccda\";a:4:{s:10:\"expiration\";i:1608624335;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:148:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 YaBrowser/20.11.3.183 Yowser/2.5 Safari/537.36\";s:5:\"login\";i:1608451535;}s:64:\"b8c158de468075c4caa3be417fbfd8755708799caa295cae848607e17db81082\";a:4:{s:10:\"expiration\";i:1608634525;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:143:\"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 YaBrowser/20.11.3.179 Yowser/2.5 Safari/537.36\";s:5:\"login\";i:1608461725;}s:64:\"a640588cdfe359bd1ad25c6c40a5ceedce178cce05c65917d1a27ea716a8eb3e\";a:4:{s:10:\"expiration\";i:1608648799;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:143:\"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 YaBrowser/20.11.3.179 Yowser/2.5 Safari/537.36\";s:5:\"login\";i:1608475999;}s:64:\"89e40cc05cfc0d5641f5ae3406bf4fd4dfb1c90782ed6cfcb8c903988a1563aa\";a:4:{s:10:\"expiration\";i:1608666854;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:148:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 YaBrowser/20.11.3.183 Yowser/2.5 Safari/537.36\";s:5:\"login\";i:1608494054;}}'),
 (17, 1, 'museum_dashboard_quick_press_last_post_id', '4'),
 (18, 1, 'community-events-location', 'a:1:{s:2:\"ip\";s:9:\"127.0.0.0\";}'),
 (19, 1, 'museum_user-settings', 'libraryContent=browse&editor=html'),
@@ -899,19 +928,19 @@ ALTER TABLE `museum_links`
 -- AUTO_INCREMENT для таблицы `museum_options`
 --
 ALTER TABLE `museum_options`
-  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=324;
+  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=326;
 
 --
 -- AUTO_INCREMENT для таблицы `museum_postmeta`
 --
 ALTER TABLE `museum_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=281;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=301;
 
 --
 -- AUTO_INCREMENT для таблицы `museum_posts`
 --
 ALTER TABLE `museum_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
 
 --
 -- AUTO_INCREMENT для таблицы `museum_termmeta`

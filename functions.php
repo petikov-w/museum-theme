@@ -156,3 +156,6 @@ add_filter('widget_text','do_shortcode');
 
 // Подключение моих шорткодов
 get_template_part( 'template-parts/function', 'shortcodes' );
+
+// Подключение моих функций работы с циклами WP_Query
+get_template_part( 'template-parts/function', 'cycle-wp-query' );

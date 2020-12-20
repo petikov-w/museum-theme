@@ -29,7 +29,6 @@ class Socialnetwork_Widget extends WP_Widget {
 	 */
 	function widget( $args, $instance ) {
 
-//		$title = $instance['title'];
 		$vk = $instance['vk'];
 		$facebook = $instance['facebook'];
 		$instagram = $instance['instagram'];
@@ -66,16 +65,12 @@ class Socialnetwork_Widget extends WP_Widget {
 	 * @param array $instance сохраненные данные из настроек
 	 */
 	function form( $instance ) {
-//		$title = @ $instance['title'] ?: __('Заголовок по умолчанию', 'museum');
+
 		$vk = @ $instance['vk'] ?: 'https://www.vk.com';
 		$facebook = @ $instance['facebook'] ?: 'https://www.facebook.com';
 		$instagram = @ $instance['instagram'] ?: 'https://www.instagram.com';
 		?>
-		<!--		<p>-->
-		<!--			<label for="--><?php //echo $this->get_field_id( 'title' ); ?><!--">--><?php //_e( 'Заголовок:' , 'museum'); ?><!--</label>-->
-		<!--			<input class="widefat" id="--><?php //echo $this->get_field_id( 'title' ); ?><!--" name="--><?php
-//			echo $this->get_field_name( 'title' ); ?><!--" type="text" value="--><?php //echo esc_attr( $title ); ?><!--">-->
-		<!--		</p>-->
+
 		<p>
 			<label for="<?php echo $this->get_field_id( 'vk' ); ?>"><?php _e( 'VK:' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'vk' ); ?>" name="<?php
@@ -107,7 +102,6 @@ class Socialnetwork_Widget extends WP_Widget {
 	 */
 	function update( $new_instance, $old_instance ) {
 		$instance = array();
-//		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
 		$instance['vk'] = ( ! empty( $new_instance['vk'] ) ) ? strip_tags( $new_instance['vk'] ) : '';
 		$instance['facebook'] = ( ! empty( $new_instance['facebook'] ) ) ? strip_tags( $new_instance['facebook'] ) : '';
 		$instance['instagram'] = ( ! empty( $new_instance['instagram'] ) ) ? strip_tags( $new_instance['instagram'] ) : '';
