@@ -34,22 +34,6 @@
                     </div>
                     <div class="footer-block">
 	                    <?php dynamic_sidebar( 'footer-contact-info' ); ?>
-<!--                            <div class="email-a">-->
-<!--                                <svg width="23" height="22" class="icon email-icon">-->
-<!--                                <use xlink:href="--><?php //echo get_template_directory_uri().
-//                                                            '/assets/images/sprite.svg#email'?><!--">-->
-<!--                                </use>-->
-<!--                            </svg>-->
-<!--                                 <a href="mailto:--><?php //echo get_field('email_address', 49) ?><!--" >--><?php //echo get_field('email_address', 49) ?><!--</a>-->
-<!--                            </div>-->
-
-<!--                        <div class="footer-socials">-->
-<!--                            <div class="social-links">-->
-<!--                                <a href="#"><img src="img/icons/vk-i.svg"></a>-->
-<!--                                <a href="#"><img src="img/icons/facebook-i.svg"></a>-->
-<!--                                <a href="#"><img src="img/icons/instagram-i.svg"></a>-->
-<!--                            </div>-->
-<!--                        </div>-->
                     </div>
                 </div>
             </div>

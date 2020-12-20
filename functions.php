@@ -2,7 +2,7 @@
 if (! function_exists('museum_theme_setup')) :
     function museum_theme_setup() {
         // добавление миниатюр
-        add_theme_support( 'post-thumbnails', array( 'post', 'lesson' ) );
+        add_theme_support( 'post-thumbnails', array( 'post', 'event', 'education' ) );
 
                // добавление пользовательского логотипа
         add_theme_support( 'custom-logo', [
@@ -23,7 +23,7 @@ endif;
 add_action( 'after_setup_theme', 'museum_theme_setup' );
 
 
-// Регистрация области виджетов
+// Регистрация областей для виджетов
 
 function museum_theme_widgets_init() {
 
@@ -78,13 +78,6 @@ function museum_theme_widgets_init() {
 
 add_action( 'widgets_init', 'museum_theme_widgets_init' );
 
-
-
-
-
-
-
-
 // подключаем стили и скрипты
 function enqueue_museum_style() {
     wp_enqueue_style( 'style', get_stylesheet_uri());
@@ -111,7 +104,7 @@ add_filter('show_admin_bar', '__return_false');
 //		rel="stylesheet">
 
 
-//================ Добавление  поля в customazer =========================================================
+//================ Добавление  поля в customazer ==============================
 
 
 function my_customize_register( $wp_customize ) {
@@ -120,7 +113,8 @@ function my_customize_register( $wp_customize ) {
 		'sanitize_callback' => 'absint',
 	));
 
-	$wp_customize->add_control(new WP_Customize_Media_Control($wp_customize, 'footer_logo', array(
+	$wp_customize->add_control(new WP_Customize_Media_Control($wp_customize, 'footer_logo',
+		array(
 		'section' => 'title_tagline',
 		'label' => 'Логотип для подвала сайта'
 	)));
@@ -142,7 +136,8 @@ add_action( 'customize_register', 'my_customize_register' );
 
 //==========================================================================
 
-get_template_part( 'template-parts/function', 'breadcrumbs' );
+// Регистрация новых типов записей
+get_template_part( 'template-parts/function', 'register-post-types' );
 
 // Регистрация нового виджета - График работы (workschedule)
 get_template_part( 'template-parts/function', 'widget-workschedule' );
@@ -150,5 +145,14 @@ get_template_part( 'template-parts/function', 'widget-workschedule' );
 // Регистрация нового виджета - Список телефонов (listphone)
 get_template_part( 'template-parts/function', 'widget-listphone' );
 
-// Регистрация нового виджета - Список телефонов (listphone)
+// Регистрация нового виджета - Социальные сети (socialnetwork)
 get_template_part( 'template-parts/function', 'widget-socialnetwork' );
+
+// Подключение функции "хлебных крошек"
+get_template_part( 'template-parts/function', 'breadcrumbs' );
+
+// Включение разрешения на использование шорткодов в текстовых виджетах
+add_filter('widget_text','do_shortcode');
+
+// Подключение моих шорткодов
+get_template_part( 'template-parts/function', 'shortcodes' );

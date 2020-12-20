@@ -38,11 +38,7 @@ class Socialnetwork_Widget extends WP_Widget {
 		$icon_instagram = get_template_directory_uri().'/assets/images/sprite.svg#instagram';
 
 		echo $args['before_widget'];
-//		echo '<div class="social-blc">';
-//		if ( ! empty( $title ) ) {
-//			echo $args['before_title'] . $title . $args['after_title'];
-//		}
-//		echo '<div class="set-social-icons">';
+
 		echo '<div class="footer-socials">';
 
 		if ( ! empty( $vk ) ) {
@@ -60,7 +56,7 @@ class Socialnetwork_Widget extends WP_Widget {
 		}
 
 		echo '</div>';
-//		echo '</div>';
+
 		echo $args['after_widget'];
 	}
 
