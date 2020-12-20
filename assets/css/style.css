@@ -18,9 +18,12 @@ nav ul.nav-main{
 	display: flex;
 	justify-content: space-between;
 }
+
+
+
 nav ul.nav-main li a, .bread-crumbs .article-nav ul a{
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 15px;
 	line-height: 100%;
 	color: #323232;
@@ -36,12 +39,197 @@ nav ul.nav-main li a:hover, .bread-crumbs .article-nav ul .active-item a{
 	color: #C02223;
 	text-decoration: none;
 }
+
+
+/*================ Мои стили ====================*/
+
+/*-------- Стили хлебных крошек -----------------*/
+.breadcrumbs__separator {
+	padding: 0 5px 0 10px;
+}
+
+.arrow-icon-broad {
+	fill: #666;
+}
+
+
+.bread-crumbs_wrapp {
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	/*line-height: 20px;*/
+	color: #666666;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.bread-crumbs_wrapp a {
+	text-decoration: none;
+	color: #666666;
+}
+
+/*-------- Стили хлебных крошек (конец) --------*/
+
+/*========== Виджет - График работы =============*/
+.icon-clock {
+	fill: #FFFFFF;
+	opacity: 0.7;
+	margin-right: 5px;
+}
+
+.set-fields-shedule span {
+	font-size: 13px;
+	/*line-height: 150%;*/
+	opacity: 0.7;
+	display: block;
+	padding-left: 20px;
+}
+
+.set-fields-shedule span:first-child {
+	margin-bottom: 7px;
+}
+
+.work-title {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 100%;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+
+}
+
+.clock-title {
+	display: flex;
+}
+/*========== Виджет - График работы (конец) =============*/
+
+/*========== Виджет - Список телефонов =============*/
+
+.set-phone .clock-title .phone-1,
+.set-phone .phone-n {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 100%;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+	text-align: right;
+}
+
+.set-phone .clock-title a {
+	margin-left: 7px;
+	margin-bottom: 10px;
+	width: 138px;
+
+
+}
+.set-phone .phone-n {
+	display: block;
+	margin-left: 25px;
+	width: 140px;
+}
+
+.set-phone .phone-n:last-child {
+	margin-bottom: 20px;
+}
+
+.icon-phone {
+	fill: #FFFFFF;
+	opacity: 0.7;
+	margin-left: 5px;
+	/*margin-right: 5px;*/
+}
+
+.icon-social {
+	fill: #ffffff;
+	opacity: 0.7;
+	/*margin-right: 10px;*/
+}
+
+.sss {
+	margin-right: 15px;
+	/*color: #ffff00;*/
+}
+
+.footer-socials {
+	display: flex;
+	justify-content: flex-end;
+}
+
+/*========== Виджет - Список телефонов (конец) =============*/
+
+.email-icon {
+	fill: #FFFFFF;
+	opacity: 0.7;
+	/*margin-right: 5px;*/
+}
+
+.footer-block .email-a {
+	display: flex;
+	margin-bottom: 15px;
+}
+
+.footer-block .email-a a {
+	font-size: 13px;
+}
+
+
+.title-page {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 46px;
+	color: #323232;
+	margin: 0;
+
+}
+
+
+.sub-menu {
+	margin-left: 0;
+}
+
+.sub-menu li:not(:first-child) {
+	margin: 15px 0;
+}
+
+.footer-menus {
+	display: flex;
+}
+
+.foot-c {
+	min-width: 300px;
+}
+
+.foot-m a {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 100%;
+	color: #FFFFFF;
+	width: 300px;
+}
+
+.textwidget p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 100%;
+	color: #FFFFFF;
+	opacity: 1;
+}
+
+/*================ Мои стили (конец) ====================*/
+
 nav ul.nav-main .nav-main_double_next__active{
 	display: block;
 }
-/* nav ul.nav-main .nav-main_double:hover ~ ul{
-	display: block;
-} */
+/*nav ul.nav-main .nav-main_double:hover ~ ul{*/
+/*	display: block;	*/
+/*}*/
 nav ul.nav-main li:hover > ul,
 nav ul.nav-main li:focus-within > ul, /* this is the line we add */
 nav ul.nav-main li ul:hover {
@@ -50,11 +238,13 @@ nav ul.nav-main li ul:hover {
   display: block;
   position: relative;
 }
+
 nav ul.nav-main li:hover > ul{
 	position: absolute;
 	padding-top: 20px;
 	z-index: 10;
 }
+
 nav ul.nav-main li:hover > ul::before{
 	position: absolute;
 	content: '';
@@ -62,24 +252,24 @@ nav ul.nav-main li:hover > ul::before{
     left: -1500px;
     width: 3000px;
     height: 230px;
-	background: #FFFFFF;
-	z-index: 9;
+	background: #ffffff;
+	z-index: 8;
 }
+
 nav ul.nav-main li > ul li{
 	margin-bottom: 15px;
 	position: relative;
     z-index: 11;
 }
+
 nav ul.nav-main li > ul li a{
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 15px;
 	line-height: 100%;
 	color: #666666;
 }
-/*.container {*/
-/*	max-width: 1200px;*/
-/*	margin: auto;*/
-/*}*/
+
+/*========================================================================*/
 
 .btn{
 	font-size: 20px;
@@ -167,6 +357,7 @@ section::after, header::after, .article-link::after{
 	width: 100%;
 	height: 1px;
 	background: #C02223;
+	/*z-index: -1;*/
 }
 /* header .row {
 	display: flex;
@@ -492,7 +683,7 @@ footer nav ul li{
 	margin-bottom: 10px;
 }
 footer nav ul li:nth-child(even){
-	flex-basis: 22%;
+	/*flex-basis: 22%;*/
 }
 footer nav ul li a{
 	font-family: 'Roboto';
@@ -511,7 +702,7 @@ footer .footer-block_wrapp{
 	justify-content: space-between;
 }
 footer .footer-block_wrapp .footer-block:first-child{
-    margin-left: 50px;
+    margin-left: 30px;
 }
 footer .footer-block_wrapp .footer-block:last-child a{
     text-align: right;
@@ -569,7 +760,7 @@ footer .footer-bottom{
 	margin-top: 40px;
 }
 footer .footer-bottom span, footer .footer-bottom span a {
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 12px;
 	line-height: 100%;
 	color: #FFFFFF;

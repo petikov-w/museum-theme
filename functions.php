@@ -14,12 +14,75 @@ if (! function_exists('museum_theme_setup')) :
         // регистрация меню
         register_nav_menus( [
             'header_menu' => 'Меню в шапке',
-            'footer_menu' => 'Меню в подвале'
+            'footer_menu_1' => 'Меню в подвале 1',
+	        'footer_menu_2' => 'Меню в подвале 2'
         ] );
     }
 endif;
 
 add_action( 'after_setup_theme', 'museum_theme_setup' );
+
+
+// Регистрация области виджетов
+
+function museum_theme_widgets_init() {
+
+	register_sidebar(
+		array(
+			'name' => esc_html__('График работы', 'museum' ),
+			'id' => 'footer-workschedule',
+			'description' => esc_html__('Добавте график здесь', 'museum' ),
+			'before_widget' => '<div id="%1$s" class="footer-text %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<span class="work-title">',
+			'after_title' => '</span>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name' => esc_html__('Контактная информация', 'museum' ),
+			'id' => 'footer-contact-info',
+			'description' => esc_html__('Добавте виджеты здесь', 'museum' ),
+			'before_widget' => '<div id="%1$s" class="footer-text %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '',
+			'after_title' => '',
+		)
+	);
+
+	// Сайдбар для вывода текствой информации copyright в подвале страницы
+	register_sidebar(
+		array(
+			'name' => esc_html__('Текст в подвале левый', 'museum' ),
+			'id' => 'footer-text-left',
+			'description' => esc_html__('Добавте текст здесь', 'museum' ),
+			'before_widget' => '<div id="%1$s" class="footer-text %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '',
+			'after_title' => '',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => esc_html__('Текст в подвале правый', 'museum' ),
+			'id' => 'footer-text-right',
+			'description' => esc_html__('Добавте текст здесь', 'museum' ),
+			'before_widget' => '<div id="%1$s" class="footer-text %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '',
+			'after_title' => '',
+		)
+	);
+}
+
+add_action( 'widgets_init', 'museum_theme_widgets_init' );
+
+
+
+
+
+
 
 
 // подключаем стили и скрипты
@@ -29,6 +92,11 @@ function enqueue_museum_style() {
     wp_enqueue_style( 'swiper-slider', get_template_directory_uri() . '/assets/css/swiper.min.css','style', time());
     wp_enqueue_style( 'museum-theme', get_template_directory_uri() . '/assets/css/style.css','style', time());
 //    wp_enqueue_style( 'Playfair Display', '//fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+	wp_enqueue_style( 'Roboto', '//fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+	wp_deregister_script( 'jquery-core' );
+	wp_register_script( 'jquery-core', '//code.jquery.com/jquery-3.5.1.min.js');
+	wp_enqueue_script( 'jquery' );
     wp_enqueue_script('swiper', get_template_directory_uri() . '/assets/js/swiper.min.js',null,time(),true);
     wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/script.js','swiper',time(),true);
 }
@@ -41,3 +109,46 @@ add_filter('show_admin_bar', '__return_false');
 //<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 //<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
 //		rel="stylesheet">
+
+
+//================ Добавление  поля в customazer =========================================================
+
+
+function my_customize_register( $wp_customize ) {
+	$wp_customize->add_setting('footer_logo', array(
+		'default' => '',
+		'sanitize_callback' => 'absint',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Media_Control($wp_customize, 'footer_logo', array(
+		'section' => 'title_tagline',
+		'label' => 'Логотип для подвала сайта'
+	)));
+
+	$wp_customize->selective_refresh->add_partial('footer_logo', array(
+		'selector' => '.footer-logo',
+		'render_callback' => function() {
+			$logo = get_theme_mod('footer_logo');
+			$img = wp_get_attachment_image_src($logo, 'full');
+			if ($img) {
+				return '<img src="' . $img[0] . '" alt="">';
+			} else {
+				return '';
+			}
+		}
+	));
+}
+add_action( 'customize_register', 'my_customize_register' );
+
+//==========================================================================
+
+get_template_part( 'template-parts/function', 'breadcrumbs' );
+
+// Регистрация нового виджета - График работы (workschedule)
+get_template_part( 'template-parts/function', 'widget-workschedule' );
+
+// Регистрация нового виджета - Список телефонов (listphone)
+get_template_part( 'template-parts/function', 'widget-listphone' );
+
+// Регистрация нового виджета - Список телефонов (listphone)
+get_template_part( 'template-parts/function', 'widget-socialnetwork' );
