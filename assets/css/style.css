@@ -42,7 +42,11 @@ nav ul.nav-main li a:hover, .bread-crumbs .article-nav ul .active-item a{
 
 
 /*================ Мои стили ====================*/
-
+.esa {
+	width: 100%;
+	height: 700px;
+	overflow: hidden;
+}
 /*-------- Стили хлебных крошек -----------------*/
 .breadcrumbs__separator {
 	padding: 0 5px 0 10px;
@@ -479,8 +483,10 @@ header .row .header-col nav{
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 130%;
-	color: #A2A2A2;
-}
+	/*color: #A2A2A2;*/
+	color: #e0dddd;
+	}
+
 .swiper-button_arrows_num span:first-child{
 	color: #fff;
 }
@@ -488,7 +494,7 @@ header .row .header-col nav{
 	content: '';
 }
 .swiper-button-next, .swiper-button-prev {
-	background: url('../img/header/Arrow-left.svg') no-repeat;
+	background: url('../images/Arrow-left.svg') no-repeat;
 	background-position-y: 50%;
 	width: inherit;
 }
@@ -579,7 +585,7 @@ header .row .header-col nav{
 	margin-bottom: 25px;
 }
 .programs .swiper-button-next, .swiper-button-prev, .article .swiper-button-next {
-	background: url('../img/prog-slider/Arrow-left.svg') no-repeat;
+	background: url('../images/Arrow-left.svg') no-repeat;
 	background-position-y: 50%;
 }
 .programs  .swiper-button_arrows_num span:first-child{
@@ -597,6 +603,7 @@ header .row .header-col nav{
 }
 .swiper-slide{
 	opacity: 0.3;
+	height: 670px;
 }
 .swiper-slide span, .swiper-slide p,.swiper-slide h3,.swiper-slide h1, .hero .swiper-wrapper .slider-btn{
 	display: none;

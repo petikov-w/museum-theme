@@ -8,9 +8,13 @@ if (! function_exists('museum_theme_setup')) :
         add_theme_support( 'custom-logo', [
             'width'       => 163,
             'flex-height' => true,
-            'header-text' => 'Universal',
+            'header-text' => '',
             'unlink-homepage-logo' => false,
         ] );
+
+	    if (function_exists('add_image_size')){
+			add_image_size('main_slider_img',1200,680,true);
+	    }
         // регистрация меню
         register_nav_menus( [
             'header_menu' => 'Меню в шапке',
@@ -21,6 +25,17 @@ if (! function_exists('museum_theme_setup')) :
 endif;
 
 add_action( 'after_setup_theme', 'museum_theme_setup' );
+// отключаем создание миниатюр файлов для указанных размеров
+add_filter( 'intermediate_image_sizes', 'delete_intermediate_image_sizes' );
+function delete_intermediate_image_sizes( $sizes ){
+	// размеры которые нужно удалить
+	return array_diff( $sizes, [
+		'medium_large',
+		'large',
+		'1536x1536',
+		'2048x2048',
+	] );
+}
 
 
 // Регистрация областей для виджетов
@@ -90,7 +105,8 @@ function enqueue_museum_style() {
 	wp_deregister_script( 'jquery-core' );
 	wp_register_script( 'jquery-core', '//code.jquery.com/jquery-3.5.1.min.js');
 	wp_enqueue_script( 'jquery' );
-    wp_enqueue_script('swiper', get_template_directory_uri() . '/assets/js/swiper.min.js',null,time(),true);
+    wp_enqueue_script('swiper', get_template_directory_uri() . '/assets/js/swiper.min.js','jquery',time(),true);
+	wp_enqueue_script('myswiper', get_template_directory_uri() . '/assets/js/myswiper.js','swiper',time(),true);
     wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/script.js','swiper',time(),true);
 }
 
