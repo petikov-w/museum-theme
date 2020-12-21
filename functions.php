@@ -155,6 +155,9 @@ add_action( 'customize_register', 'my_customize_register' );
 // Регистрация новых типов записей
 get_template_part( 'template-parts/function', 'register-post-types' );
 
+// Регистрация новых таксономий
+get_template_part( 'template-parts/function', 'register-taxonomy' );
+
 // Регистрация нового виджета - График работы (workschedule)
 get_template_part( 'template-parts/function', 'widget-workschedule' );
 

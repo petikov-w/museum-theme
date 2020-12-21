@@ -29,7 +29,7 @@ function register_post_types(){
 //		'menu_icon'           => 'dashicons-welcome-learn-more',
 		'capability_type'   => 'post',
 		'hierarchical'        => false,
-		'supports'            => [ 'title', 'editor', 'thumbnail', 'custom-fields'], // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+		'supports'            => [ 'title', 'thumbnail', 'custom-fields'], // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
 		'has_archive'         => true,
 		'rewrite'             => true,
 		'query_var'           => true,
@@ -61,7 +61,7 @@ function register_post_types(){
 		'menu_icon'           => 'dashicons-welcome-learn-more',
 		'capability_type'   => 'post',
 		'hierarchical'        => false,
-		'supports'            => [ 'title', 'editor', 'thumbnail', 'custom-fields'], // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+		'supports'            => [ 'title', 'thumbnail', 'custom-fields'], // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
 		'has_archive'         => true,
 		'rewrite'             => true,
 		'query_var'           => true,
