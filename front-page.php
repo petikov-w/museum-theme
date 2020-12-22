@@ -41,161 +41,23 @@ get_header();
                             <div class="info-header-tab">Будущие</div>
                             <div class="info-header-tab">Предыдущие</div>
                         </div>
-                        <div class="info-tabcontent fade">
-                            <div class="grid-container">
-                                <div class="s">
-                                    <div class="poster-wrapp_block">
-                                        <img src="img/post/1.png">
-                                        <span>20 августа — 30 сентября 2019</span>
-                                        <h4>Приглашаем посетить выставку «История жизни в лицах»</h4>
-                                    </div>
-                                </div>
-                                <div class="e">
-                                    <div class="poster-wrapp_block">
-                                        <img src="img/post/1.png">
-                                        <span>20 августа — 30 сентября 2019</span>
-                                        <h4>Приглашаем посетить выставку «История жизни в лицах»</h4>
-                                    </div>
-                                </div>
-                                <div class="er">
-                                    <div class="poster-wrapp_block">
-                                        <img src="img/post/2.png">
-                                        <span>30 мая 2020</span>
-                                        <h4>5-я образовательная сессия проекта "Школа - мастерская аналитического
-                                            рисунка и скульптуры для юных художников"</h4>
-                                    </div>
-                                </div>
-                                <div class="t">
-                                    <div class="poster-wrapp_block">
-                                        <img src="img/post/3.png">
-                                        <span>22 июня 2020</span>
-                                        <h4>Добрый день, дорогие участники проекта!</h4>
-                                    </div>
-                                </div>
-                                <div class="d">
-                                    <div class="poster-wrapp_block">
-                                        <img src="img/post/3.png">
-                                        <span>22 июня 2020</span>
-                                        <h4>Добрый день, дорогие участники проекта!</h4>
-                                    </div>
-                                </div>
-                                <div class="g">
-                                    <div class="poster-wrapp_block">
-                                        <img src="img/post/2.png">
-                                        <span>30 мая 2020</span>
-                                        <h4>5-я образовательная сессия проекта "Школа - мастерская аналитического
-                                            рисунка и скульптуры для юных художников"</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info-tabcontent fade">
-                            <div class="grid-container">
-                                <div class="s">
-                                    <div class="poster-wrapp_block">
-                                        <img src="img/post/1.png">
-                                        <span>20 августа — 30 сентября 2019</span>
-                                        <h4>Приглашаем посетить выставку «История жизни в лицах»</h4>
-                                    </div>
-                                </div>
-                                <div class="e">
-                                    <div class="poster-wrapp_block">
-                                        <img src="img/post/1.png">
-                                        <span>20 августа — 30 сентября 2019</span>
-                                        <h4>Приглашаем посетить выставку «История жизни в лицах»</h4>
-                                    </div>
-                                </div>
-                                <div class="er">
-                                    <div class="poster-wrapp_block">
-                                        <img src="img/post/2.png">
-                                        <span>30 мая 2020</span>
-                                        <h4>5-я образовательная сессия проекта "Школа - мастерская аналитического
-                                            рисунка и скульптуры для юных художников"</h4>
-                                    </div>
-                                </div>
-                                <div class="t">
-                                    <div class="poster-wrapp_block">
-                                        <img src="img/post/3.png">
-                                        <span>22 июня 2020</span>
-                                        <h4>Добрый день, дорогие участники проекта!</h4>
-                                    </div>
-                                </div>
-                                <div class="d">
-                                    <div class="poster-wrapp_block">
-                                        <img src="img/post/3.png">
-                                        <span>22 июня 2020</span>
-                                        <h4>Добрый день, дорогие участники проекта!</h4>
-                                    </div>
-                                </div>
-                                <div class="g">
-                                    <div class="poster-wrapp_block">
-                                        <img src="img/post/2.png">
-                                        <span>30 мая 2020</span>
-                                        <h4>5-я образовательная сессия проекта "Школа - мастерская аналитического
-                                            рисунка и скульптуры для юных художников"</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info-tabcontent fade">
-                            <div class="grid-container">
-                                <div class="s">
-                                    <div class="poster-wrapp_block">
-                                        <img src="img/post/1.png">
-                                        <span>20 августа — 30 сентября 2019</span>
-                                        <h4>Приглашаем посетить выставку «История жизни в лицах»</h4>
-                                    </div>
-                                </div>
-                                <div class="e">
-                                    <div class="poster-wrapp_block">
-                                        <img src="img/post/1.png">
-                                        <span>20 августа — 30 сентября 2019</span>
-                                        <h4>Приглашаем посетить выставку «История жизни в лицах»</h4>
-                                    </div>
-                                </div>
-                                <div class="er">
-                                    <div class="poster-wrapp_block">
-                                        <img src="img/post/2.png">
-                                        <span>30 мая 2020</span>
-                                        <h4>5-я образовательная сессия проекта "Школа - мастерская аналитического
-                                            рисунка и скульптуры для юных художников"</h4>
-                                    </div>
-                                </div>
-                                <div class="t">
-                                    <div class="poster-wrapp_block">
-                                        <img src="img/post/3.png">
-                                        <span>22 июня 2020</span>
-                                        <h4>Добрый день, дорогие участники проекта!</h4>
-                                    </div>
-                                </div>
-                                <div class="d">
-                                    <div class="poster-wrapp_block">
-                                        <img src="img/post/3.png">
-                                        <span>22 июня 2020</span>
-                                        <h4>Добрый день, дорогие участники проекта!</h4>
-                                    </div>
-                                </div>
-                                <div class="g">
-                                    <div class="poster-wrapp_block">
-                                        <img src="img/post/2.png">
-                                        <span>30 мая 2020</span>
-                                        <h4>5-я образовательная сессия проекта "Школа - мастерская аналитического
-                                            рисунка и скульптуры для юных художников"</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+<!--                        <div class="info-tabcontent fade">-->
+<!--                            <div class="grid-container">-->
+	                            <?php
+                                    $args_events = array(
+                                        'post_type' => 'event',
+                                    );
+	                            cycle_wp_query_switch($args_events, 'main-poster');
+	                            ?>
+<!--                            </div>-->
+<!--                        </div>-->
                     </div>
-
+                </div>
+                <div class="btn-wrapp">
+                    <a href="#" class="slider-btn btn-white">Вся афиша</a>
                 </div>
             </div>
-        </div>
-        <div class="btn-wrapp">
-            <a href="#" class="slider-btn btn-white">Вся афиша</a>
-        </div>
-</div>
-</section>
+    </section>
 
 
 

@@ -47,7 +47,6 @@ function cycle_wp_query_switch ($args_query, $content_block) {
 	global $post; // Объявляем глобальную переменнную $post
 	$query = new WP_Query($args_query);
 	// проверяем есть ли посты в сформированном массиве $query
-	$_SESSION['filter'] = $args_query['tag'];
 	if ( $query->have_posts() ) {
 		$cnt=0;
 		// если есть запускаем цикл вывода постов

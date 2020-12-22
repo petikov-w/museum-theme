@@ -14,6 +14,9 @@ if (! function_exists('museum_theme_setup')) :
 
 	    if (function_exists('add_image_size')){
 			add_image_size('main_slider_img',1200,680,true);
+		    add_image_size('main_poster_img_b',380,400,true);
+		    add_image_size('main_poster_img_m',380,330,true);
+		    add_image_size('main_poster_img_s',380,240,true);
 	    }
         // регистрация меню
         register_nav_menus( [
