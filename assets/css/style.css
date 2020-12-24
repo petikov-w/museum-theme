@@ -8,7 +8,7 @@ body{
 	overflow: hidden;
 }
 img{
-	max-width: 100%;	
+	/*max-width: 100%;	*/
 }
 body .popup-nav{
 	display: none;
@@ -47,6 +47,36 @@ nav ul.nav-main li a:hover, .bread-crumbs .article-nav ul .active-item a{
 	height: 700px;
 	overflow: hidden;
 }
+
+.eva {
+	color: #0c0c0c;
+}
+
+.header-top a {
+	text-decoration: none;
+}
+
+footer .row a {
+	text-decoration: none;
+}
+
+
+/*============= Кнопка "Вся афиша" ==============*/
+.poster .btn-wrapp a {
+	color: #C02223;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+
+.poster .btn-wrapp a:visited {
+	color: #C02223;
+}
+
+.poster .btn-wrapp a:hover {
+	color: #ffffff;
+}
+/*============= Кнопка "Вся афиша" (конец) ========*/
 /*-------- Стили хлебных крошек -----------------*/
 .breadcrumbs__separator {
 	padding: 0 5px 0 10px;
@@ -63,7 +93,7 @@ nav ul.nav-main li a:hover, .bread-crumbs .article-nav ul .active-item a{
 	/*line-height: 20px;*/
 	color: #666666;
 	margin-top: 20px;
-	margin-bottom: 40px;
+	margin-bottom: 15px;
 }
 
 .bread-crumbs_wrapp a {
@@ -511,7 +541,8 @@ header .row .header-col nav{
 	display: block;
 }
 .poster .poster-wrapp_block {
-	min-width: 380px;
+	max-width: 380px;
+	margin-bottom: 15px;
 }
 .poster h2{
 	margin-bottom: 5px;
@@ -1019,7 +1050,7 @@ padding-bottom: 20px;
     flex-wrap: wrap;
 }
 .pictures img{
-	width: 100%;
+	/*width: 100%;*/
 }
 .pictures .pictures-wrapp_block{
 	margin-bottom: 50px;

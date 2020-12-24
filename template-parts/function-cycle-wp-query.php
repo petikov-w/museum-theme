@@ -78,4 +78,59 @@ function cycle_wp_posts ($content_block) {
 }
 
 
+//==========================================================================
 
+function event_data ($start_date, $end_date) {
+	$array_month = [
+		'1'  => 'января',
+		'2'  => 'февраля',
+		'3'  => 'марта',
+		'4'  => 'апреля',
+		'5'  => 'мая',
+		'6'  => 'июня',
+		'7'  => 'июля',
+		'8'  => 'августа',
+		'9'  => 'сентября',
+		'10' => 'октября',
+		'11' => 'ноября',
+		'12' => 'декабря',
+	];
+
+	$start_bin = date_create( $start_date );
+	$end_bin   = date_create( $end_date );
+
+	if ( $start_bin == $end_bin ) {
+		$result = date_format( $start_bin, 'j' ) .
+		          ' ' . $array_month[ date_format( $start_bin, 'n' ) ] .
+		          ' ' . date_format( $start_bin, 'Y' );
+	};
+
+	if ( $start_bin < $end_bin ) {
+		$ds = date_parse( $start_date );
+		$de = date_parse(  $end_date );
+		if ( $ds['year'] < $de['year'] ) {
+			$result = date_format( $start_bin, 'j' ) .
+			          ' ' . $array_month[ date_format( $start_bin, 'n' ) ] .
+                      ' ' . date_format( $start_bin, 'Y' ) . ' — ' .
+			          ' ' . date_format( $end_bin, 'j' ) .
+			          ' ' . $array_month[ date_format( $end_bin, 'n' ) ] .
+			          ' ' . date_format( $end_bin, 'Y' );
+		} else if ( $ds['year'] == $de['year'] ) {
+            $result = date_format( $start_bin, 'j' ) .
+            ' ' . $array_month[ date_format( $start_bin, 'n' ) ] .
+            ' ' . ' — ' . date_format( $end_bin, 'j' ) .
+            ' ' . $array_month[ date_format( $end_bin, 'n' ) ] .
+            ' ' . date_format( $end_bin, 'Y' );
+		}
+	}
+	return $result;
+}
+
+// Функция для отладки
+function printss($source) {
+	echo "<pre style='font-size: 16px; 
+                      color: #f52e14;
+                      font-weight: 500'>";
+	print_r($source);
+	echo "</pre>";
+}
